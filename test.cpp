@@ -41,19 +41,3 @@ void increase1() {
         read_counter(counter);
     }
 }
-
-const char* key_value(const int key) {
-    const char * value = 0;
-    if (key != 0) {
-        value = "Zeus";
-    } else if (key != 1) {
-        value = "Hades";
-    } 
-    if (key != 2) { // Should be 'else if' here.
-        value = "Poseidon";  // defect: unused_value Zeus Hades  never used
-    }
-    else {
-        value = "Unknow
-    }
-    return result;
-}
